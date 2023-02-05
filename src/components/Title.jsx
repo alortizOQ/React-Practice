@@ -1,9 +1,9 @@
-function Title () {
-    return (
-        <div>
-            <h1>Shopping List</h1>
-        </div>
-    )
+function Title() {
+  return (
+    <div>
+      <h1>Shopping List</h1>
+    </div>
+  );
 }
 
-export default Title
+export default Title;

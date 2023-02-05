@@ -1,11 +1,13 @@
+import "./Todo.css";
+
 function Todo() {
-    return (
-        <div>
-            <h2>Workout</h2>
-            <span>Description</span>
-            <button>Delete</button>
-        </div>
-    )
+  return (
+    <div className="todo">
+      <h2>Workout</h2>
+      <span>Description</span>
+      <button>Delete</button>
+    </div>
+  );
 }
 
-export default Todo /* VERY IMPORTANT */
+export default Todo; /* VERY IMPORTANT */
