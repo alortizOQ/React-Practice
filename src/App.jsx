@@ -13,6 +13,7 @@ function App() {
       {/* Short hand Notation of components */}
       <Title />
 
+
       <div className="todo__wrapper">
         {/* To pass anything else but a string use '{}' */}
         <Todo
@@ -29,9 +30,9 @@ function App() {
         />
         {/* Create prop: <Todo propName="Prop Value" />*/}
       </div>
-      <Modal
+      {/* <Modal
         confirmation="Are you sure you want to delete?"
-      />
+      /> */}
     </div>
   );
 }
