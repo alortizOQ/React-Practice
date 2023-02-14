@@ -14,11 +14,12 @@ function App() {
       <Title />
 
       <div className="todo__wrapper">
-        <Todo />
-        <Todo />
-        <Todo />
+        <Todo title="Hit New PR" /> {/* To pass anything else but a string use '{}' */}
+        <Todo title="Bench Press 180" />
+        <Todo title="Squat 200" />
+        {/* Create prop: <Todo propName="Prop Value" />*/}
       </div>
-      <Modal />
+      {/* <Modal /> */}
     </div>
   );
 }
