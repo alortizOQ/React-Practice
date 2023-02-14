@@ -1,0 +1,39 @@
+Creating Props:
+
+    Create prop: <Todo propName="Prop Value" />
+
+Using Props:
+
+    Accept props in parameter
+        function Todo({propname}){
+            ...
+        }
+
+    Use props
+        functon Todo({propname}){
+            return <div> {propname} </div>
+        }
+
+    Multiple props
+        <Todo propName="Prop value" propTwo="Second prop value" />
+
+    Accept multiple props
+        function Todo({propname1, propname2}){
+            ...
+        }
+
+    Use muiltiple props
+        function Todo({propname1, propname2}){
+            return <div> {propName} {propNameTwo} </div>
+        }
+
+    Parent component
+        <MyComponent test="Testing" />
+
+    Child component
+        function MyComponent({test}){
+            return <div>{ test }</div>
+        }
+    
+    Output:
+        Testing
