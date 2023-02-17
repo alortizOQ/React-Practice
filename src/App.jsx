@@ -13,6 +13,15 @@ function App() {
       {/* Short hand Notation of components */}
       <Title />
 
+      <div>
+        <input
+          type="text"
+          onChange={(event) => {
+            console.log(event.target.value);
+          }}
+        />
+        <button>Add to-do</button>
+      </div>
 
       <div className="todo__wrapper">
         {/* To pass anything else but a string use '{}' */}
@@ -30,9 +39,9 @@ function App() {
         />
         {/* Create prop: <Todo propName="Prop Value" />*/}
       </div>
-      {/* <Modal
+      <Modal
         confirmation="Are you sure you want to delete?"
-      /> */}
+      />
     </div>
   );
 }
