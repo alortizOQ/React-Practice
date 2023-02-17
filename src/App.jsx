@@ -4,8 +4,11 @@ import Todo from "./components/Todo.jsx"; /* How to import the file */
 import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
 import React, { useState } from "react";
+import Counter from "./components/Counter";
 
 function App() {
+  return <Counter counter="0" />;
+
   // let isModalOpen = false;
 
   // function toggleModal() {
