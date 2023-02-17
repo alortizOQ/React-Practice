@@ -1,0 +1,19 @@
+REACT HOOKS
+
+Most important React hooks:
+- useState
+- useEffect
+
+
+useState:
+- Is how we define variables in React
+
+
+Conditioninal Rendering
+- Rendering a component when a certain condition is met
+
+const [state, setState] = useState(false);
+         ^       ^                   ^
+                                    Default value
+                 Function that changes the state
+         State variable

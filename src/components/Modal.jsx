@@ -7,8 +7,22 @@ function Modal({ confirmation }) {
       <div className="modal">
         <p className="modal__title">{confirmation}</p>
         <div className="modal__buttons">
-          <button className="btn btn__cancel" onClick={() => {console.log("Cancel")}}>Cancel</button>
-          <button className="btn" onClick={() => {console.log("Confirm")}}>Confirm</button>
+          <button
+            className="btn btn__cancel"
+            onClick={() => {
+              console.log("Cancel");
+            }}
+          >
+            Cancel
+          </button>
+          <button
+            className="btn"
+            onClick={() => {
+              console.log("Confirm");
+            }}
+          >
+            Confirm
+          </button>
         </div>
       </div>
       <div className="backdrop" />

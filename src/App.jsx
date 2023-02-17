@@ -3,8 +3,19 @@ import "./App.css";
 import Todo from "./components/Todo.jsx"; /* How to import the file */
 import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
+import React, { useState } from "react";
 
 function App() {
+  // let isModalOpen = false;
+
+  // function toggleModal() {
+  //   isModalOpen = !isModalOpen;
+  //   console.log(isModalOpen);
+  // } Not how you want to define variables
+
+  const [showModal, setShowModal] = useState(false); //DEFAULT VALUE INSIDE PARENTHESIS
+  //in [] first will be current state(showModal) the next one will be update that state(setShowModal)
+
   return (
     <div>
       {/* Long Hand Notation of components */}
@@ -20,7 +31,7 @@ function App() {
             console.log(event.target.value);
           }}
         />
-        <button>Add to-do</button>
+        <button onClick={() => setShowModal(true)}>Add to-do</button>
       </div>
 
       <div className="todo__wrapper">
@@ -39,9 +50,12 @@ function App() {
         />
         {/* Create prop: <Todo propName="Prop Value" />*/}
       </div>
-      <Modal
-        confirmation="Are you sure you want to delete?"
-      />
+
+      {/* Can Also use double && instead of Ternary operator, NEEDS to be boolean*/}
+      {showModal && <Modal confirmation="Confirm Delete" />}
+
+      {/* {isModalOpen ? <Modal confirmation="Confirm Delete" /> : null} */}
+      {/* Use Ternary Operators */}
     </div>
   );
 }
