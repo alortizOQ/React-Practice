@@ -5,9 +5,14 @@ import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
 import React, { useState } from "react";
 import Counter from "./components/Counter";
-
+import Cart from "./components/Cart"
 function App() {
-  return <Counter counter="0" />;
+  return(
+    <>
+    {/* <Counter /> */}
+    <Cart />
+    </>
+  );
 
   // let isModalOpen = false;
 

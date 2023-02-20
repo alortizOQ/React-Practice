@@ -6,11 +6,13 @@ function Counter() {
     const [count, changeCount] = useState(0);
 
     const increment = () => {
-        changeCount(count + 1);
+        changeCount((prevCounter) => prevCounter + 1); //Use callback () =>
+        changeCount((prevCounter) => prevCounter + 1);
     };
 
     const decrement = () => {
-        changeCount(count - 1);
+        changeCount((prevCounter) => prevCounter - 1)
+        changeCount((prevCounter) => prevCounter - 1)
     };
 
   return (
