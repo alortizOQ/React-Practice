@@ -5,12 +5,15 @@ import Title from "./components/Title.jsx";
 import Modal from "./components/Modal.jsx";
 import React, { useState } from "react";
 import Counter from "./components/Counter";
-import Cart from "./components/Cart"
+import Cart from "./components/Cart";
+import Countertwo from "./components/Countertwo";
+
 function App() {
-  return(
+  return (
     <>
-    {/* <Counter /> */}
-    <Cart />
+      {/* <Counter /> */}
+      {/* <Cart /> */}
+      <Countertwo />
     </>
   );
 

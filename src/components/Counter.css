@@ -1,21 +1,21 @@
 .container {
-    display: flex;
-    text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 .counter {
-    font-size: 100px;
-    flex: 1;
+  font-size: 100px;
+  flex: 1;
 }
 
 .btn__subtract {
-    font-size: 100px;
-    padding: auto;
-    flex: 1;
+  font-size: 100px;
+  padding: auto;
+  flex: 1;
 }
 
 .btn__add {
-    font-size: 100px;
-    padding: auto;
-    flex: 1;
+  font-size: 100px;
+  padding: auto;
+  flex: 1;
 }
